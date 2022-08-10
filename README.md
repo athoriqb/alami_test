@@ -1,4 +1,4 @@
-# Elevania Automation Test with Selenium and Cucumber
+# Automation Test with Selenium and Cucumber
 
 ### Requirement
 - JDK 17
