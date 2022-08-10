@@ -48,7 +48,7 @@ public class Steps {
     @When("user choose produk terlaris")
     public void user_choose_produk_terlaris() throws InterruptedException {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Produk terlaris']"))).click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Produk terlaris' and @class=\"active\"]")));
     }
 
