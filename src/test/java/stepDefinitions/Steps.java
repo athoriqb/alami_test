@@ -47,7 +47,7 @@ public class Steps {
 
     @When("user choose produk terlaris")
     public void user_choose_produk_terlaris() throws InterruptedException {
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='Produk terlaris']"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Produk terlaris']"))).click();
         Thread.sleep(2000);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Produk terlaris' and @class=\"active\"]")));
     }
@@ -56,7 +56,7 @@ public class Steps {
     public void choose_first_product() {
         productName = driver.findElement(By.xpath("//ul[@class='albumList revampList'][1]//li[@class='itemList'][1]//a[@class='pordLink notranslate']")).getText();
         System.out.println("Product Name : " + productName);
-        driver.findElement(By.cssSelector("ul[class='albumList revampList']:first-of-type li[class='itemList']:first-of-type")).click();
+        driver.findElement(By.cssSelector("ul[class='albumList revampList']:first-of-type li[class='itemList']:first-of-type a[class=\"pordLink notranslate\"]")).click();
     }
 
     @When("add {int} quantity of product to shopping cart")
