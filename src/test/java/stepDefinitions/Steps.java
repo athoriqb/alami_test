@@ -99,4 +99,50 @@ public class Steps {
     public void product_deleted_in_shopping_cart() {
         new WebDriverWait(driver,Duration.ofSeconds(5)).until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(productCart)));
     }
+
+    // mamikos
+    @Given("open mamikos page")
+    public void open_mamikos_page() {
+        driver.get("https://mamikos.com/");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("h1[class='home-top-search-title']")));
+    }
+    @When("click masuk button")
+    public void click_masuk_button() {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("button[class='nav-login-button']")));
+        driver.findElement(By.cssSelector("button[class='nav-login-button']")).click();
+    }
+    @When("choose Pencari kos")
+    public void choose_pencari_kos() {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[class='bg-c-modal__action']")));
+        driver.findElement(By.cssSelector("div[data-testid='pencariKosButton']")).click();
+    }
+    @When("click Daftar sekarang")
+    public void click_daftar_sekarang() {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("p[class='login-title']")));
+        driver.findElement(By.cssSelector("a[data-testid='registerButton']")).click();
+    }
+    @When("input all field registarion")
+    public void input_all_field_registarion() {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input[data-testid='fullnameTextbox']")));
+        driver.findElement(By.cssSelector("input[name='name']")).sendKeys("Achmad Thoriq");
+        driver.findElement(By.cssSelector("input[name='phone_number']")).sendKeys("0812874874872");
+        driver.findElement(By.cssSelector("input[name='email']")).sendKeys("athoriqb@gmail.com");
+        driver.findElement(By.cssSelector("input[name='password']")).sendKeys("Testing123");
+        driver.findElement(By.cssSelector("input[name='password_confirmation']")).sendKeys("Testing123");
+    }
+    @When("click cari iklan")
+    public void click_cari_iklan() {
+        driver.findElement(By.cssSelector("div[class='nav-main-link']")).click();
+    }
+    @When("choose kos")
+    public void choose_kos() {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("//div[@class='bg-c-dropdown__menu-item-content' and contains(text(),'Kos')]"))).click();
+    }
+    @Then("will redirect to search page")
+    public void will_redirect_to_search_page() {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("//h2[@class='list__title' and contains(text(),'kos')]")));
+    }
+
+    // API Test
+
 }

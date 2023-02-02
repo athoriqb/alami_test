@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features/",
-        tags = "@alami_test",
+        tags = "@api_test",
         glue = "stepDefinitions",
         plugin = {
                 "pretty",
