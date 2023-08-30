@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 19.88 s <<< FAILURE! - in runners.TestRunner
+Mamikos.End to End mamikos  Time elapsed: 19.781 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=116.0.5845.110)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: '192.168.1.5', ip: '2405:8180:303:431a:25d0:d7b9:1721:eff8%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20e7fb7b2fc548517abf6f7f0c91bf8a, clickElement {id=15BF4618894C2ADAF0754CBAE5A7D3F5_element_375}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/8j/tyfqmyxx6x9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56109/devtoo..., se:cdpVersion: 116.0.5845.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (20e7fb7b2fc548517abf6f7f0c91bf8a)] -> css selector: div[class='nav-main-link']]
+Session ID: 20e7fb7b2fc548517abf6f7f0c91bf8a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at stepDefinitions.Steps.click_cari_iklan(Steps.java:139)
+	at ✽.click cari iklan(file:///Users/achmadthoriqbaidowi/Documents/java_selenium/src/test/resources/features/mamikos.feature:10)
+
