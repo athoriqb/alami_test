@@ -6,13 +6,14 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features/",
-        tags = "@mamikos",
+@CucumberOptions(features = "src/test/resources/features",
+        tags = "@orange",
         glue = "stepDefinitions",
         plugin = {
                 "pretty",
                 "html:target/cucumber-reports.html",
-                "json:target/alami-report.json"
-        })
+                "json:target/cucumber-reports.json"
+        },
+        publish = true)
 public class TestRunner {
 }

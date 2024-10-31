@@ -1,4 +1,2 @@
-stepDefinitions/Steps.class
-ApiCase.class
-stepDefinitions/apiSteps.class
 runners/TestRunner.class
+stepDefinitions/Steps.class

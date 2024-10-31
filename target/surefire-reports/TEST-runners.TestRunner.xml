@@ -1,784 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="19.88" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="16.941" tests="1" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="19"/>
-    <property name="webdriver.chrome.driver" value="/Users/achmadthoriqbaidowi/.cache/selenium/chromedriver/mac-arm64/116.0.5845.96/chromedriver"/>
+    <property name="java.specification.version" value="23"/>
+    <property name="webdriver.chrome.driver" value="/Users/flp9achmadthoriq/.cache/selenium/chromedriver/mac-arm64/130.0.6723.91/chromedriver"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/achmadthoriqbaidowi/Documents/java_selenium/target/test-classes:/Users/achmadthoriqbaidowi/Documents/java_selenium/target/classes:/Users/achmadthoriqbaidowi/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/achmadthoriqbaidowi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-java/7.6.0/cucumber-java-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-junit/7.6.0/cucumber-junit-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-core/7.6.0/cucumber-core-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-gherkin/7.6.0/cucumber-gherkin-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.6.0/cucumber-gherkin-messages-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/messages/19.0.0/messages-19.0.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-expressions/16.0.0/cucumber-expressions-16.0.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/datatable/7.6.0/datatable-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-plugin/7.6.0/cucumber-plugin-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/docstring/7.6.0/docstring-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/html-formatter/20.0.0/html-formatter-20.0.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-html/0.2.7/cucumber-html-0.2.7.jar:/Users/achmadthoriqbaidowi/.m2/repository/net/sourceforge/cobertura/cobertura/2.1.1/cobertura-2.1.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/ow2/asm/asm/5.0.1/asm-5.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/ow2/asm/asm-tree/5.0.1/asm-tree-5.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/ow2/asm/asm-commons/5.0.1/asm-commons-5.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/ow2/asm/asm-util/5.0.1/asm-util-5.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/ow2/asm/asm-analysis/5.0.1/asm-analysis-5.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/Users/achmadthoriqbaidowi/.m2/repository/jaxen/jaxen/1.1.4/jaxen-1.1.4.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/ant/ant/1.8.3/ant-1.8.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/ant/ant-launcher/1.8.3/ant-launcher-1.8.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/ant/ant-junit/1.8.3/ant-junit-1.8.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.1.14/servlet-api-2.5-6.1.14.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/mortbay/jetty/jetty/6.1.14/jetty-6.1.14.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/mortbay/jetty/jetty-util/6.1.14/jetty-util-6.1.14.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/achmadthoriqbaidowi/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar:/Users/achmadthoriqbaidowi/.m2/repository/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-jvm-deps/1.0.6/cucumber-jvm-deps-1.0.6.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/gherkin/24.0.0/gherkin-24.0.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.0/junit-jupiter-api-5.9.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/junit/platform/junit-platform-commons/1.9.0/junit-platform-commons-1.9.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-java/4.3.0/selenium-java-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-api/4.3.0/selenium-api-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.3.0/selenium-chrome-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.3.0/selenium-chromium-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-json/4.3.0/selenium-json-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v101/4.3.0/selenium-devtools-v101-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v102/4.3.0/selenium-devtools-v102-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v103/4.3.0/selenium-devtools-v103-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.3.0/selenium-devtools-v85-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.3.0/selenium-edge-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.3.0/selenium-firefox-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.3.0/selenium-ie-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.3.0/selenium-opera-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.3.0/selenium-remote-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-buffer/4.1.78.Final/netty-buffer-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-codec-http/4.1.78.Final/netty-codec-http-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-codec/4.1.78.Final/netty-codec-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-handler/4.1.78.Final/netty-handler-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-common/4.1.78.Final/netty-common-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.78.Final/netty-transport-classes-epoll-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.78.Final/netty-transport-classes-kqueue-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-native-epoll/4.1.78.Final/netty-transport-native-epoll-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.78.Final/netty-transport-native-kqueue-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.78.Final/netty-transport-native-unix-common-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport/4.1.78.Final/netty-transport-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-resolver/4.1.78.Final/netty-resolver-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-api/1.15.0/opentelemetry-api-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-context/1.15.0/opentelemetry-context-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.15.0/opentelemetry-exporter-logging-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.15.0/opentelemetry-sdk-metrics-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.15.0-alpha/opentelemetry-sdk-logs-1.15.0-alpha.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.15.0/opentelemetry-sdk-common-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.15.0/opentelemetry-sdk-extension-autoconfigure-spi-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.15.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.15.0-alpha.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.15.0/opentelemetry-sdk-trace-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.15.0/opentelemetry-sdk-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.15.0-alpha/opentelemetry-semconv-1.15.0-alpha.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-http/4.3.0/selenium-http-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/dev/failsafe/failsafe/3.2.4/failsafe-3.2.4.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.3.0/selenium-safari-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-support/4.3.0/selenium-support-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.2/webdrivermanager-5.5.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-server/3.141.59/selenium-server-3.141.59.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/achmadthoriqbaidowi/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.12.v20180830/jetty-repacked-9.4.12.v20180830.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:"/>
+    <property name="java.class.path" value="/Users/flp9achmadthoriq/Documents/java_selenium/target/test-classes:/Users/flp9achmadthoriq/Documents/java_selenium/target/classes:/Users/flp9achmadthoriq/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/flp9achmadthoriq/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/flp9achmadthoriq/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/flp9achmadthoriq/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/flp9achmadthoriq/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/flp9achmadthoriq/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/flp9achmadthoriq/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/flp9achmadthoriq/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/flp9achmadthoriq/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-java/7.6.0/cucumber-java-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-junit/7.6.0/cucumber-junit-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-core/7.6.0/cucumber-core-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-gherkin/7.6.0/cucumber-gherkin-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.6.0/cucumber-gherkin-messages-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/messages/19.0.0/messages-19.0.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-expressions/16.0.0/cucumber-expressions-16.0.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/datatable/7.6.0/datatable-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-plugin/7.6.0/cucumber-plugin-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/docstring/7.6.0/docstring-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/html-formatter/20.0.0/html-formatter-20.0.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-html/0.2.7/cucumber-html-0.2.7.jar:/Users/flp9achmadthoriq/.m2/repository/net/sourceforge/cobertura/cobertura/2.1.1/cobertura-2.1.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/ow2/asm/asm/5.0.1/asm-5.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/ow2/asm/asm-tree/5.0.1/asm-tree-5.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/ow2/asm/asm-commons/5.0.1/asm-commons-5.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/ow2/asm/asm-util/5.0.1/asm-util-5.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/ow2/asm/asm-analysis/5.0.1/asm-analysis-5.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/Users/flp9achmadthoriq/.m2/repository/jaxen/jaxen/1.1.4/jaxen-1.1.4.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/ant/ant/1.8.3/ant-1.8.3.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/ant/ant-launcher/1.8.3/ant-launcher-1.8.3.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/ant/ant-junit/1.8.3/ant-junit-1.8.3.jar:/Users/flp9achmadthoriq/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.1.14/servlet-api-2.5-6.1.14.jar:/Users/flp9achmadthoriq/.m2/repository/org/mortbay/jetty/jetty/6.1.14/jetty-6.1.14.jar:/Users/flp9achmadthoriq/.m2/repository/org/mortbay/jetty/jetty-util/6.1.14/jetty-util-6.1.14.jar:/Users/flp9achmadthoriq/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/flp9achmadthoriq/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar:/Users/flp9achmadthoriq/.m2/repository/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-jvm-deps/1.0.6/cucumber-jvm-deps-1.0.6.jar:/Users/flp9achmadthoriq/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/gherkin/24.0.0/gherkin-24.0.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.0/junit-jupiter-api-5.9.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/junit/platform/junit-platform-commons/1.9.0/junit-platform-commons-1.9.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-java/4.3.0/selenium-java-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-api/4.3.0/selenium-api-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.3.0/selenium-chrome-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.3.0/selenium-chromium-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-json/4.3.0/selenium-json-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v101/4.3.0/selenium-devtools-v101-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v102/4.3.0/selenium-devtools-v102-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v103/4.3.0/selenium-devtools-v103-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.3.0/selenium-devtools-v85-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.3.0/selenium-edge-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.3.0/selenium-firefox-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.3.0/selenium-ie-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.3.0/selenium-opera-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.3.0/selenium-remote-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-buffer/4.1.78.Final/netty-buffer-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-codec-http/4.1.78.Final/netty-codec-http-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-codec/4.1.78.Final/netty-codec-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-handler/4.1.78.Final/netty-handler-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-common/4.1.78.Final/netty-common-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.78.Final/netty-transport-classes-epoll-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.78.Final/netty-transport-classes-kqueue-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-native-epoll/4.1.78.Final/netty-transport-native-epoll-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.78.Final/netty-transport-native-kqueue-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.78.Final/netty-transport-native-unix-common-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport/4.1.78.Final/netty-transport-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-resolver/4.1.78.Final/netty-resolver-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-api/1.15.0/opentelemetry-api-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-context/1.15.0/opentelemetry-context-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.15.0/opentelemetry-exporter-logging-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.15.0/opentelemetry-sdk-metrics-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.15.0-alpha/opentelemetry-sdk-logs-1.15.0-alpha.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.15.0/opentelemetry-sdk-common-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.15.0/opentelemetry-sdk-extension-autoconfigure-spi-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.15.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.15.0-alpha.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.15.0/opentelemetry-sdk-trace-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.15.0/opentelemetry-sdk-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.15.0-alpha/opentelemetry-semconv-1.15.0-alpha.jar:/Users/flp9achmadthoriq/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/flp9achmadthoriq/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/flp9achmadthoriq/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/flp9achmadthoriq/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/flp9achmadthoriq/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-http/4.3.0/selenium-http-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/dev/failsafe/failsafe/3.2.4/failsafe-3.2.4.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.3.0/selenium-safari-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-support/4.3.0/selenium-support-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.2/webdrivermanager-5.5.2.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/flp9achmadthoriq/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/flp9achmadthoriq/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/flp9achmadthoriq/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/flp9achmadthoriq/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/flp9achmadthoriq/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/flp9achmadthoriq/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/flp9achmadthoriq/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/flp9achmadthoriq/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/flp9achmadthoriq/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/flp9achmadthoriq/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-server/3.141.59/selenium-server-3.141.59.jar:/Users/flp9achmadthoriq/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/flp9achmadthoriq/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/flp9achmadthoriq/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.12.v20180830/jetty-repacked-9.4.12.v20180830.jar:/Users/flp9achmadthoriq/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/flp9achmadthoriq/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/flp9achmadthoriq/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="user.timezone" value="Asia/Jakarta"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="java.vm.specification.version" value="19"/>
+    <property name="java.vm.specification.version" value="23"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
-    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/achmadthoriqbaidowi/Documents/java_selenium/target/surefire/surefirebooter-20230830101129078_3.jar /Users/achmadthoriqbaidowi/Documents/java_selenium/target/surefire 2023-08-30T10-11-29_029-jvmRun1 surefire-20230830101129078_1tmp surefire_0-20230830101129078_2tmp"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/flp9achmadthoriq/Documents/java_selenium/target/surefire/surefirebooter2956691364299669370.jar /Users/flp9achmadthoriq/Documents/java_selenium/target/surefire 2024-10-31T21-23-34_090-jvmRun1 surefire12849718469541329357tmp surefire_011896495860837686078tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/achmadthoriqbaidowi/Documents/java_selenium/target/test-classes:/Users/achmadthoriqbaidowi/Documents/java_selenium/target/classes:/Users/achmadthoriqbaidowi/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/achmadthoriqbaidowi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-java/7.6.0/cucumber-java-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-junit/7.6.0/cucumber-junit-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-core/7.6.0/cucumber-core-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-gherkin/7.6.0/cucumber-gherkin-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.6.0/cucumber-gherkin-messages-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/messages/19.0.0/messages-19.0.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-expressions/16.0.0/cucumber-expressions-16.0.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/datatable/7.6.0/datatable-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-plugin/7.6.0/cucumber-plugin-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/docstring/7.6.0/docstring-7.6.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/html-formatter/20.0.0/html-formatter-20.0.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-html/0.2.7/cucumber-html-0.2.7.jar:/Users/achmadthoriqbaidowi/.m2/repository/net/sourceforge/cobertura/cobertura/2.1.1/cobertura-2.1.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/ow2/asm/asm/5.0.1/asm-5.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/ow2/asm/asm-tree/5.0.1/asm-tree-5.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/ow2/asm/asm-commons/5.0.1/asm-commons-5.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/ow2/asm/asm-util/5.0.1/asm-util-5.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/ow2/asm/asm-analysis/5.0.1/asm-analysis-5.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/Users/achmadthoriqbaidowi/.m2/repository/jaxen/jaxen/1.1.4/jaxen-1.1.4.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/ant/ant/1.8.3/ant-1.8.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/ant/ant-launcher/1.8.3/ant-launcher-1.8.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/ant/ant-junit/1.8.3/ant-junit-1.8.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.1.14/servlet-api-2.5-6.1.14.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/mortbay/jetty/jetty/6.1.14/jetty-6.1.14.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/mortbay/jetty/jetty-util/6.1.14/jetty-util-6.1.14.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/achmadthoriqbaidowi/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar:/Users/achmadthoriqbaidowi/.m2/repository/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/cucumber-jvm-deps/1.0.6/cucumber-jvm-deps-1.0.6.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/cucumber/gherkin/24.0.0/gherkin-24.0.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.0/junit-jupiter-api-5.9.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/junit/platform/junit-platform-commons/1.9.0/junit-platform-commons-1.9.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-java/4.3.0/selenium-java-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-api/4.3.0/selenium-api-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.3.0/selenium-chrome-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.3.0/selenium-chromium-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-json/4.3.0/selenium-json-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v101/4.3.0/selenium-devtools-v101-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v102/4.3.0/selenium-devtools-v102-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v103/4.3.0/selenium-devtools-v103-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.3.0/selenium-devtools-v85-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.3.0/selenium-edge-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.3.0/selenium-firefox-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.3.0/selenium-ie-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.3.0/selenium-opera-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.3.0/selenium-remote-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-buffer/4.1.78.Final/netty-buffer-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-codec-http/4.1.78.Final/netty-codec-http-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-codec/4.1.78.Final/netty-codec-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-handler/4.1.78.Final/netty-handler-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-common/4.1.78.Final/netty-common-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.78.Final/netty-transport-classes-epoll-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.78.Final/netty-transport-classes-kqueue-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-native-epoll/4.1.78.Final/netty-transport-native-epoll-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.78.Final/netty-transport-native-kqueue-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.78.Final/netty-transport-native-unix-common-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport/4.1.78.Final/netty-transport-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-resolver/4.1.78.Final/netty-resolver-4.1.78.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-api/1.15.0/opentelemetry-api-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-context/1.15.0/opentelemetry-context-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.15.0/opentelemetry-exporter-logging-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.15.0/opentelemetry-sdk-metrics-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.15.0-alpha/opentelemetry-sdk-logs-1.15.0-alpha.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.15.0/opentelemetry-sdk-common-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.15.0/opentelemetry-sdk-extension-autoconfigure-spi-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.15.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.15.0-alpha.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.15.0/opentelemetry-sdk-trace-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.15.0/opentelemetry-sdk-1.15.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.15.0-alpha/opentelemetry-semconv-1.15.0-alpha.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-http/4.3.0/selenium-http-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/dev/failsafe/failsafe/3.2.4/failsafe-3.2.4.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.3.0/selenium-safari-driver-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-support/4.3.0/selenium-support-4.3.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.2/webdrivermanager-5.5.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/selenium-server/3.141.59/selenium-server-3.141.59.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/achmadthoriqbaidowi/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/achmadthoriqbaidowi/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.12.v20180830/jetty-repacked-9.4.12.v20180830.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/achmadthoriqbaidowi/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/flp9achmadthoriq/Documents/java_selenium/target/test-classes:/Users/flp9achmadthoriq/Documents/java_selenium/target/classes:/Users/flp9achmadthoriq/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/flp9achmadthoriq/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/flp9achmadthoriq/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/flp9achmadthoriq/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/flp9achmadthoriq/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/flp9achmadthoriq/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/flp9achmadthoriq/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/flp9achmadthoriq/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/flp9achmadthoriq/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-java/7.6.0/cucumber-java-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-junit/7.6.0/cucumber-junit-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-core/7.6.0/cucumber-core-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-gherkin/7.6.0/cucumber-gherkin-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.6.0/cucumber-gherkin-messages-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/messages/19.0.0/messages-19.0.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-expressions/16.0.0/cucumber-expressions-16.0.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/datatable/7.6.0/datatable-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-plugin/7.6.0/cucumber-plugin-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/docstring/7.6.0/docstring-7.6.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/html-formatter/20.0.0/html-formatter-20.0.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-html/0.2.7/cucumber-html-0.2.7.jar:/Users/flp9achmadthoriq/.m2/repository/net/sourceforge/cobertura/cobertura/2.1.1/cobertura-2.1.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/ow2/asm/asm/5.0.1/asm-5.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/ow2/asm/asm-tree/5.0.1/asm-tree-5.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/ow2/asm/asm-commons/5.0.1/asm-commons-5.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/ow2/asm/asm-util/5.0.1/asm-util-5.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/ow2/asm/asm-analysis/5.0.1/asm-analysis-5.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/Users/flp9achmadthoriq/.m2/repository/jaxen/jaxen/1.1.4/jaxen-1.1.4.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/ant/ant/1.8.3/ant-1.8.3.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/ant/ant-launcher/1.8.3/ant-launcher-1.8.3.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/ant/ant-junit/1.8.3/ant-junit-1.8.3.jar:/Users/flp9achmadthoriq/.m2/repository/org/mortbay/jetty/servlet-api-2.5/6.1.14/servlet-api-2.5-6.1.14.jar:/Users/flp9achmadthoriq/.m2/repository/org/mortbay/jetty/jetty/6.1.14/jetty-6.1.14.jar:/Users/flp9achmadthoriq/.m2/repository/org/mortbay/jetty/jetty-util/6.1.14/jetty-util-6.1.14.jar:/Users/flp9achmadthoriq/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/flp9achmadthoriq/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar:/Users/flp9achmadthoriq/.m2/repository/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/cucumber-jvm-deps/1.0.6/cucumber-jvm-deps-1.0.6.jar:/Users/flp9achmadthoriq/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/flp9achmadthoriq/.m2/repository/io/cucumber/gherkin/24.0.0/gherkin-24.0.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.0/junit-jupiter-api-5.9.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/junit/platform/junit-platform-commons/1.9.0/junit-platform-commons-1.9.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-java/4.3.0/selenium-java-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-api/4.3.0/selenium-api-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.3.0/selenium-chrome-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.3.0/selenium-chromium-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-json/4.3.0/selenium-json-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v101/4.3.0/selenium-devtools-v101-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v102/4.3.0/selenium-devtools-v102-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v103/4.3.0/selenium-devtools-v103-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.3.0/selenium-devtools-v85-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.3.0/selenium-edge-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.3.0/selenium-firefox-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.3.0/selenium-ie-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.3.0/selenium-opera-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.3.0/selenium-remote-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-buffer/4.1.78.Final/netty-buffer-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-codec-http/4.1.78.Final/netty-codec-http-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-codec/4.1.78.Final/netty-codec-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-handler/4.1.78.Final/netty-handler-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-common/4.1.78.Final/netty-common-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.78.Final/netty-transport-classes-epoll-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.78.Final/netty-transport-classes-kqueue-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-native-epoll/4.1.78.Final/netty-transport-native-epoll-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.78.Final/netty-transport-native-kqueue-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.78.Final/netty-transport-native-unix-common-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport/4.1.78.Final/netty-transport-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-resolver/4.1.78.Final/netty-resolver-4.1.78.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-api/1.15.0/opentelemetry-api-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-context/1.15.0/opentelemetry-context-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.15.0/opentelemetry-exporter-logging-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.15.0/opentelemetry-sdk-metrics-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.15.0-alpha/opentelemetry-sdk-logs-1.15.0-alpha.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.15.0/opentelemetry-sdk-common-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.15.0/opentelemetry-sdk-extension-autoconfigure-spi-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.15.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.15.0-alpha.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.15.0/opentelemetry-sdk-trace-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.15.0/opentelemetry-sdk-1.15.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.15.0-alpha/opentelemetry-semconv-1.15.0-alpha.jar:/Users/flp9achmadthoriq/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/flp9achmadthoriq/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/flp9achmadthoriq/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/flp9achmadthoriq/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/flp9achmadthoriq/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/flp9achmadthoriq/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-http/4.3.0/selenium-http-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/dev/failsafe/failsafe/3.2.4/failsafe-3.2.4.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.3.0/selenium-safari-driver-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-support/4.3.0/selenium-support-4.3.0.jar:/Users/flp9achmadthoriq/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.2/webdrivermanager-5.5.2.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/flp9achmadthoriq/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/flp9achmadthoriq/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/flp9achmadthoriq/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/flp9achmadthoriq/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/flp9achmadthoriq/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/flp9achmadthoriq/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/flp9achmadthoriq/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/flp9achmadthoriq/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/flp9achmadthoriq/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/flp9achmadthoriq/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/flp9achmadthoriq/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/flp9achmadthoriq/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/selenium-server/3.141.59/selenium-server-3.141.59.jar:/Users/flp9achmadthoriq/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/flp9achmadthoriq/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/flp9achmadthoriq/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/flp9achmadthoriq/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.12.v20180830/jetty-repacked-9.4.12.v20180830.jar:/Users/flp9achmadthoriq/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/flp9achmadthoriq/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/flp9achmadthoriq/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/flp9achmadthoriq/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/Users/achmadthoriqbaidowi"/>
+    <property name="user.home" value="/Users/flp9achmadthoriq"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2023-01-17"/>
-    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="java.version.date" value="2024-09-17"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/23/libexec/openjdk.jdk/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/achmadthoriqbaidowi/Documents/java_selenium"/>
+    <property name="basedir" value="/Users/flp9achmadthoriq/Documents/java_selenium"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/achmadthoriqbaidowi/Documents/java_selenium/target/surefire/surefirebooter-20230830101129078_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/flp9achmadthoriq/Documents/java_selenium/target/surefire/surefirebooter2956691364299669370.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="19.0.2"/>
-    <property name="user.name" value="achmadthoriqbaidowi"/>
+    <property name="java.runtime.version" value="23"/>
+    <property name="user.name" value="flp9achmadthoriq"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="12.5"/>
+    <property name="os.version" value="15.0.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="java.vendor.version" value="Homebrew"/>
-    <property name="localRepository" value="/Users/achmadthoriqbaidowi/.m2/repository"/>
+    <property name="localRepository" value="/Users/flp9achmadthoriq/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="java.io.tmpdir" value="/var/folders/8j/tyfqmyxx6x9fh2kvg9m14yvr0000gp/T/"/>
-    <property name="java.version" value="19.0.2"/>
-    <property name="user.dir" value="/Users/achmadthoriqbaidowi/Documents/java_selenium"/>
+    <property name="java.io.tmpdir" value="/var/folders/ms/b7y40zwn69g_2c28p37sj6d80000gp/T/"/>
+    <property name="java.version" value="23"/>
+    <property name="user.dir" value="/Users/flp9achmadthoriq/Documents/java_selenium"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/achmadthoriqbaidowi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.library.path" value="/Users/flp9achmadthoriq/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="UTF-8"/>
     <property name="java.vendor" value="Homebrew"/>
-    <property name="java.vm.version" value="19.0.2"/>
+    <property name="java.vm.version" value="23"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.class.version" value="63.0"/>
+    <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="End to End mamikos" classname="Mamikos" time="19.781">
-    <error message="element not interactable&#10;  (Session info: chrome=116.0.5845.110)&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;192.168.1.5&apos;, ip: &apos;2405:8180:303:431a:25d0:d7b9:1721:eff8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;19.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [20e7fb7b2fc548517abf6f7f0c91bf8a, clickElement {id=15BF4618894C2ADAF0754CBAE5A7D3F5_element_375}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/8j/tyfqmyxx6x9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56109/devtoo..., se:cdpVersion: 116.0.5845.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (20e7fb7b2fc548517abf6f7f0c91bf8a)] -&gt; css selector: div[class=&apos;nav-main-link&apos;]]&#10;Session ID: 20e7fb7b2fc548517abf6f7f0c91bf8a" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=116.0.5845.110)
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: '192.168.1.5', ip: '2405:8180:303:431a:25d0:d7b9:1721:eff8%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20e7fb7b2fc548517abf6f7f0c91bf8a, clickElement {id=15BF4618894C2ADAF0754CBAE5A7D3F5_element_375}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/8j/tyfqmyxx6x9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56109/devtoo..., se:cdpVersion: 116.0.5845.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (20e7fb7b2fc548517abf6f7f0c91bf8a)] -> css selector: div[class='nav-main-link']]
-Session ID: 20e7fb7b2fc548517abf6f7f0c91bf8a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at stepDefinitions.Steps.click_cari_iklan(Steps.java:139)
-	at ✽.click cari iklan(file:///Users/achmadthoriqbaidowi/Documents/java_selenium/src/test/resources/features/mamikos.feature:10)
-]]></error>
+  <testcase name="Verify able to apply leave until balance 0" classname="OrangeHRM Leave Feature" time="14.388">
     <system-out><![CDATA[
-@mamikos
-Scenario: End to End mamikos        &amp#27;[90m# src/test/resources/features/mamikos.feature:4&amp#27;[0m
-[DEBUG] Resolution chrome=116 in cache (valid until 11:01:38 30/08/2023 WIB)
-[DEBUG] Resolution chrome116=116.0.5845.96 in cache (valid until 10:01:38 31/08/2023 WIB)
-[INFO] Using chromedriver 116.0.5845.96 (resolved driver for Chrome 116)
-[DEBUG] Driver chromedriver 116.0.5845.96 found in cache
-[INFO] Exporting webdriver.chrome.driver as /Users/achmadthoriqbaidowi/.cache/selenium/chromedriver/mac-arm64/116.0.5845.96/chromedriver
-[DEBUG] Using SLF4J as the default logging framework
-[DEBUG] -Dio.netty.leakDetection.level: simple
-[DEBUG] -Dio.netty.leakDetection.targetRecords: 4
-[DEBUG] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@f096f37
-[DEBUG] -Dio.netty.noUnsafe: false
-[DEBUG] Java version: 19
-[DEBUG] sun.misc.Unsafe.theUnsafe: available
-[DEBUG] sun.misc.Unsafe.copyMemory: available
-[DEBUG] sun.misc.Unsafe.storeFence: available
-[DEBUG] java.nio.Buffer.address: available
-[DEBUG] direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-[DEBUG] java.nio.Bits.unaligned: available, true
-[DEBUG] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @5db54e92
-[DEBUG] java.nio.DirectByteBuffer.<init>(long, int): unavailable
-[DEBUG] sun.misc.Unsafe: available
-[DEBUG] maxDirectMemory: 4294967296 bytes (maybe)
-[DEBUG] -Dio.netty.tmpdir: /var/folders/8j/tyfqmyxx6x9fh2kvg9m14yvr0000gp/T (java.io.tmpdir)
-[DEBUG] -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[DEBUG] Platform: MacOS
-[DEBUG] -Dio.netty.maxDirectMemory: -1 bytes
-[DEBUG] -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[DEBUG] java.nio.ByteBuffer.cleaner(): available
-[DEBUG] -Dio.netty.noPreferDirect: false
-[DEBUG] org.jctools-core.MpscChunkedArrayQueue: available
-[DEBUG] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-[DEBUG] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-[DEBUG] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-[DEBUG] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-[DEBUG] -Dio.netty.eventLoopThreads: 20
-[DEBUG] -Dio.netty.noKeySetOptimization: false
-[DEBUG] -Dio.netty.selectorAutoRebuildThreshold: 512
-[DEBUG] -Dio.netty.allocator.numHeapArenas: 20
-[DEBUG] -Dio.netty.allocator.numDirectArenas: 20
-[DEBUG] -Dio.netty.allocator.pageSize: 8192
-[DEBUG] -Dio.netty.allocator.maxOrder: 9
-[DEBUG] -Dio.netty.allocator.chunkSize: 4194304
-[DEBUG] -Dio.netty.allocator.smallCacheSize: 256
-[DEBUG] -Dio.netty.allocator.normalCacheSize: 64
-[DEBUG] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-[DEBUG] -Dio.netty.allocator.cacheTrimInterval: 8192
-[DEBUG] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-[DEBUG] -Dio.netty.allocator.useCacheForAllThreads: false
-[DEBUG] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-[DEBUG] -Dio.netty.allocator.type: pooled
-[DEBUG] -Dio.netty.threadLocalDirectBufferSize: 0
-[DEBUG] -Dio.netty.maxThreadLocalCharBufferSize: 16384
-[DEBUG] -Dio.netty.processId: 38934 (auto-detected)
-[DEBUG] -Djava.net.preferIPv4Stack: false
-[DEBUG] -Djava.net.preferIPv6Addresses: false
-[DEBUG] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
-[DEBUG] Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
-[DEBUG] -Dio.netty.machineId: bc:d0:74:ff:fe:a2:d0:66 (auto-detected)
-[DEBUG] -Dio.netty.buffer.checkAccessible: true
-[DEBUG] -Dio.netty.buffer.checkBounds: true
-[DEBUG] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3ea4a7f8
-[DEBUG] Using new Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to '/session'
-[DEBUG] -Dio.netty.recycler.maxCapacityPerThread: 4096
-[DEBUG] -Dio.netty.recycler.ratio: 8
-[DEBUG] -Dio.netty.recycler.chunkSize: 32
-[DEBUG] -Dio.netty.recycler.blocking: false
-[DEBUG] brotli4j not in the classpath; Brotli support will be unavailable.
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 439
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 896
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using new Channel '[id: 0x4786aa88, L:/127.0.0.1:56117 - R:localhost/127.0.0.1:56109]' for 'GET' to '/json/version'
-[DEBUG] 
-
-Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
-GET /json/version HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-host: localhost:56109
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Security-Policy: frame-ancestors 'none'
-Content-Type: application/json; charset=UTF-8
-content-length: 422
-
-[DEBUG] Adding key: http://localhost:56109 for channel [id: 0x4786aa88, L:/127.0.0.1:56117 - R:localhost/127.0.0.1:56109]
-[DEBUG] -Dio.netty.initialSeedUniquifier: 0x27d08d0d52306044
-[DEBUG] Using new Channel '[id: 0xbc93ba76, L:/127.0.0.1:56118 - R:localhost/127.0.0.1:56109]' for 'GET' to '/devtools/browser/dbb3d246-0ac0-4e20-b106-f2099dad3772'
-[DEBUG] 
-
-Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
-GET /devtools/browser/dbb3d246-0ac0-4e20-b106-f2099dad3772 HTTP/1.1
-upgrade: websocket
-connection: upgrade
-sec-websocket-key: 0ofFrqqf5SUiF34qAdWlJw==
-sec-websocket-version: 13
-origin: http://localhost:56109
-host: localhost:56109
-accept: */*
-user-agent: AHC/2.1
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 101 WebSocket Protocol Handshake
-Upgrade: WebSocket
-Connection: Upgrade
-Sec-WebSocket-Accept: U+4qlXlS7d77X4JskzJW9RWNRD8=
-
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:59844 : 1
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/timeouts'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/timeouts'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/timeouts HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 23
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/url'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/url'
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/url HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 50
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 77
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mopen mamikos page&amp#27;[0m           &amp#27;[90m# stepDefinitions.Steps.open_mamikos_page()&amp#27;[0m
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 76
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 76
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/BDF3BFCCD040379923165586482EE0DF_element_231/click'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/BDF3BFCCD040379923165586482EE0DF_element_231/click'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/BDF3BFCCD040379923165586482EE0DF_element_231/click HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 58
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mclick masuk button&amp#27;[0m           &amp#27;[90m# stepDefinitions.Steps.click_masuk_button()&amp#27;[0m
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 75
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 79
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/BDF3BFCCD040379923165586482EE0DF_element_292/click'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/BDF3BFCCD040379923165586482EE0DF_element_292/click'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/BDF3BFCCD040379923165586482EE0DF_element_292/click HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 58
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mchoose Pencari kos&amp#27;[0m            &amp#27;[90m# stepDefinitions.Steps.choose_pencari_kos()&amp#27;[0m
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 66
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 75
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/BDF3BFCCD040379923165586482EE0DF_element_304/click'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/BDF3BFCCD040379923165586482EE0DF_element_304/click'
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/BDF3BFCCD040379923165586482EE0DF_element_304/click HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 58
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclick Daftar sekarang&amp#27;[0m         &amp#27;[90m# stepDefinitions.Steps.click_daftar_sekarang()&amp#27;[0m
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 80
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 62
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_356/value'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_356/value'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_356/value HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 219
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 70
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_399/value'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_399/value'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_399/value HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 219
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 63
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_357/value'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_357/value'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_357/value HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 269
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 66
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_363/value'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_363/value'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_363/value HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 189
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 79
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_364/value'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_364/value'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_364/value HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 189
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32minput all field registarion&amp#27;[0m   &amp#27;[90m# stepDefinitions.Steps.input_all_field_registarion()&amp#27;[0m
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element'
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 70
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 96
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'POST' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_375/click'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for POST '/session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_375/click'
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] Entry count for : http://localhost:56109 : 1
-[DEBUG] 
-
-Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
-POST /session/20e7fb7b2fc548517abf6f7f0c91bf8a/element/15BF4618894C2ADAF0754CBAE5A7D3F5_element_375/click HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Length: 58
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 400 Bad Request
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 1702
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mclick cari iklan&amp#27;[0m              &amp#27;[90m# stepDefinitions.Steps.click_cari_iklan()&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=116.0.5845.110)
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: '192.168.1.5', ip: '2405:8180:303:431a:25d0:d7b9:1721:eff8%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20e7fb7b2fc548517abf6f7f0c91bf8a, clickElement {id=15BF4618894C2ADAF0754CBAE5A7D3F5_element_375}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/8j/tyfqmyxx6x9...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56109/devtoo..., se:cdpVersion: 116.0.5845.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (20e7fb7b2fc548517abf6f7f0c91bf8a)] -> css selector: div[class='nav-main-link']]
-Session ID: 20e7fb7b2fc548517abf6f7f0c91bf8a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at stepDefinitions.Steps.click_cari_iklan(Steps.java:139)
-	at ✽.click cari iklan(file:///Users/achmadthoriqbaidowi/Documents/java_selenium/src/test/resources/features/mamikos.feature:10)
-&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mchoose kos&amp#27;[0m                    &amp#27;[90m# stepDefinitions.Steps.choose_kos()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mwill redirect to search page&amp#27;[0m &amp#27;[90m# stepDefinitions.Steps.will_redirect_to_search_page()&amp#27;[0m
-[DEBUG] Using pooled Channel '[id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]' for 'DELETE' to 'http://localhost:59844/session/20e7fb7b2fc548517abf6f7f0c91bf8a'
-[DEBUG] Using open Channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844] for DELETE '/session/20e7fb7b2fc548517abf6f7f0c91bf8a'
-[DEBUG] Channel Closed: [id: 0xbc93ba76, L:/127.0.0.1:56118 ! R:localhost/127.0.0.1:56109] with attribute NettyResponseFuture{currentRetry=0,
-	isDone=1,
-	isCancelled=0,
-	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@39f02274,
-	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@17fe6b7f,
-	future=java.util.concurrent.CompletableFuture@4a12b5a4[Completed normally],
-	uri=ws://localhost:56109/devtools/browser/dbb3d246-0ac0-4e20-b106-f2099dad3772,
-	keepAlive=true,
-	redirectCount=0,
-	timeoutsHolder=null,
-	inAuth=0,
-	touch=1693365091087}
-[DEBUG] Closing Channel [id: 0xbc93ba76, L:/127.0.0.1:56118 ! R:localhost/127.0.0.1:56109] 
-[DEBUG] Channel Closed: [id: 0x4786aa88, L:/127.0.0.1:56117 ! R:localhost/127.0.0.1:56109] with attribute DISCARD
-[DEBUG] 
-
-Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
-DELETE /session/20e7fb7b2fc548517abf6f7f0c91bf8a HTTP/1.1
-User-Agent: selenium/4.3.0 (java mac)
-Content-Type: application/json; charset=utf-8
-host: localhost:59844
-accept: */*
-
-Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-cache-control: no-cache
-content-length: 14
-
-[DEBUG] Adding key: http://localhost:59844 for channel [id: 0x56fbb4c2, L:/127.0.0.1:56108 - R:localhost/127.0.0.1:59844]
-[DEBUG] Channel Closed: [id: 0x56fbb4c2, L:/127.0.0.1:56108 ! R:localhost/127.0.0.1:59844] with attribute DISCARD
+@orange
+Scenario: Verify able to apply leave until balance 0 &amp#27;[90m# src/test/resources/features/orangeHRM.feature:7&amp#27;[0m
+406  [main] INFO  i.g.b.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+418  [main] INFO  i.g.b.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/flp9achmadthoriq/.cache/selenium/chromedriver/mac-arm64/130.0.6723.91/chromedriver
+Step definition executed: user login as admin
+Entering username: Admin
+Entering password: admin123
+Clicking login button
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32muser login as admin&amp#27;[0m                          &amp#27;[90m# stepDefinitions.Steps.user_login_as_admin()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32muser click leave&amp#27;[0m                              &amp#27;[90m# stepDefinitions.Steps.user_click_leave()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mclick apply tab&amp#27;[0m                                &amp#27;[90m# stepDefinitions.Steps.click_apply_tab()&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 59844
+    <system-err><![CDATA[Starting ChromeDriver 130.0.6723.91 (53ac076783696778ecc8f360ea31765c29c240ad-refs/branch-heads/6723@{#1517}) on port 63946
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Aug 30, 2023 10:11:31 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+ChromeDriver was started successfully on port 63946.
+Oct 31, 2024 9:23:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Aug 30, 2023 10:11:31 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 116, so returning the closest version found: a no-op implementation
-Aug 30, 2023 10:11:31 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFO: Unable to find CDP implementation matching 116.
-Aug 30, 2023 10:11:31 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+Oct 31, 2024 9:23:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 130, so returning the closest version found: a no-op implementation
+Oct 31, 2024 9:23:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 130.
+Oct 31, 2024 9:23:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.3.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
